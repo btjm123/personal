@@ -203,8 +203,8 @@ export default function Home() {
         className="min-h-screen flex justify-center"
         ref={aboutSectionRef}
       >
-        <div className="sm:w-screen md:w-screen lg:w-4/5 mt-40">
-          <div className="sm:w-full md:w-full sm:px-20 md:px-20 lg:w-3/5">
+        <div className="w-4/5 mt-40">
+          <div className="sm:w-full md:w-full lg:w-3/5">
             <FirstHeading>about me. 🤪</FirstHeading>
             <motion.div
               ref={aboutMeRef}
@@ -305,8 +305,8 @@ export default function Home() {
         className="min-h-screen flex justify-center"
         ref={awardsSectionRef}
       >
-        <div className="sm:w-full md:w-full lg:w-4/5 mt-20">
-          <div className="sm:w-full md:w-full sm:px-20 md:px-20 lg:w-3/5">
+        <div className="w-4/5 mt-20">
+          <div className="sm:w-full md:w-full lg:w-3/5">
             <FirstHeading>awards. 🎖️</FirstHeading>
             <motion.ul
               ref={awardRef}
