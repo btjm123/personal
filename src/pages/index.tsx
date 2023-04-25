@@ -181,7 +181,7 @@ export default function Home() {
       </nav>
       {/* Intro Section */}
       <section className="min-h-screen flex items-center" ref={introSectionRef}>
-        <div className="w-1/2 pl-40">
+        <div className="sm:w-full md:w-full sm:px-20 md:px-20 lg:w-1/2 pl-40">
           <motion.p
             className="text-6xl"
             variants={shakeVariant}
@@ -200,11 +200,11 @@ export default function Home() {
 
       {/*  About Me Section */}
       <section
-        className="min-h-screen  flex justify-center"
+        className="min-h-screen flex justify-center"
         ref={aboutSectionRef}
       >
-        <div className="w-4/5 mt-40">
-          <div className="w-3/5">
+        <div className="sm:w-screen md:w-screen lg:w-4/5 mt-40">
+          <div className="sm:w-full md:w-full sm:px-20 md:px-20 lg:w-3/5">
             <FirstHeading>about me. 🤪</FirstHeading>
             <motion.div
               ref={aboutMeRef}

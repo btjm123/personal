@@ -7,7 +7,12 @@ interface TextProps {
 
 const FirstHeading: React.FC<TextProps> = ({ children, style = '' }) => {
   return (
-    <h1 className={'font-bold font-sans text-6xl text-black mb-10 ' + style}>
+    <h1
+      className={
+        'font-bold font-sans sm:text-5xl md:text-5xl lg:text-6xl text-black mb-10 ' +
+        style
+      }
+    >
       {children}
     </h1>
   );
@@ -17,7 +22,7 @@ const SecondHeading: React.FC<TextProps> = ({ children, style = '' }) => {
   return (
     <h2
       className={
-        'font-bold font-sans text-4xl text-black mb-10 tracking-widest leading-snug ' +
+        'font-bold font-sans sm:text-3xl md:text-3xl lg:text-4xl text-black mb-10 tracking-widest leading-snug ' +
         style
       }
     >
@@ -30,7 +35,7 @@ const ThirdHeading: React.FC<TextProps> = ({ children, style = '' }) => {
   return (
     <h3
       className={
-        'font-bold font-sans text-3xl text-black mb-10 tracking-wider leading-relaxed ' +
+        'font-bold font-sans sm:text-2xl md:text-2xl lg:text-3xl text-black mb-10 tracking-wider leading-relaxed ' +
         style
       }
     >
@@ -43,7 +48,8 @@ const FourthHeading: React.FC<TextProps> = ({ children, style = '' }) => {
   return (
     <h4
       className={
-        'font-bold font-sans text-2xl text-black leading-relaxed' + style
+        'font-bold font-sans sm:text-xl md:text-xl lg:text-2xl text-black leading-relaxed' +
+        style
       }
     >
       {children}
@@ -53,7 +59,7 @@ const FourthHeading: React.FC<TextProps> = ({ children, style = '' }) => {
 
 const SubHeading: React.FC<TextProps> = ({ children }) => {
   return (
-    <p className="font-bold font-sans text-lg text-slate-800 mb-8 ">
+    <p className="font-bold font-sans sm:text-base md:text-base lg:text-lg text-slate-800 mb-8 ">
       {children}
     </p>
   );
