@@ -213,14 +213,14 @@ export default function Home() {
               variants={boxVariant}
             >
               <ThirdHeading>
-                My first encounter with programming was through the Inspect
-                Element Function. Since then I started learning a bunch of
-                languages and frameworks and happened to really like it a lot.
+                I have a growing interest in Investment Banking as it will help
+                me establish a strong foundation for financial modelling and
+                valuation skills.
               </ThirdHeading>
               <ThirdHeading>
-                Programming empowers me to build products that have a real
-                impact on people lives. I also enjoy solving algorithmic and
-                mathematical problems with code.
+                Given my prior experience in coding, I believe that my critical
+                and logical thinking skills honed will also help me in the
+                pursit in the IB track.
               </ThirdHeading>
             </motion.div>
           </div>
