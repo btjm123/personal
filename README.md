@@ -19,6 +19,7 @@ Even though I didn't need the backend or file-based routing features that NextJS
 - [ ] Add a contact form (really?)
 - [ ] Add a referrals section (probably not tho)
 - [ ] Add a fake loading screen (far fetched in the future, possible with useTimeout ig and NextJS file-based routing will come in handy here)
+- [ ] Get a custom domain (not very far fetched)
 
 ## Getting Started
 
@@ -32,7 +33,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## Deployment on Vercel
 
-Deployment Link: [https://personal-portfolio-two-nu.vercel.app/](https://personal-portfolio-two-nu.vercel.app
+Visit it[here](https://personal-portfolio-two-nu.vercel.app)
 
 ## Feedback
 
