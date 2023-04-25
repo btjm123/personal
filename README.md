@@ -7,14 +7,18 @@ Even though I didn't need the backend or file-based routing features that NextJS
 ![personal-draft-1](https://user-images.githubusercontent.com/19306879/234338976-e9113db0-8003-4f09-8ff7-8c23519c6d54.gif)
 
 
-To Dos:
-- Add Projects Section (maybe a card with box-shadow properties?)
-- Add hyperlinks to GitHub, LinkedIn, Youtube Channel
-- Add Dark Mode
-- Add Meta Tags for SEO
-- Add Profile Picture (maybe a circular icon?)
-- Add a contact form (really?)
-- Add a referrals section (probably not tho)
+# To Dos:
+
+- [x] Responsive Navbar
+- [x] Responsive text and respective section 
+- [ ] Add Projects Section (maybe a card with box-shadow properties?)
+- [ ] Add hyperlinks to GitHub, LinkedIn, Youtube Channel
+- [ ] Add Dark Mode
+- [ ] Add Meta Tags for SEO
+- [ ] Add Profile Picture (maybe a circular icon?)
+- [ ] Add a contact form (really?)
+- [ ] Add a referrals section (probably not tho)
+- [ ] Add a fake loading screen (far fetched in the future, possible with useTimeout ig and NextJS file-based routing will come in handy here)
 
 ## Getting Started
 
