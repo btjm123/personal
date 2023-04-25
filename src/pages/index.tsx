@@ -81,6 +81,30 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Experience Section */}
+      <section className="h-screen bg-blue-100 flex justify-center">
+        <div className="w-4/5 mt-40">
+          <div className="w-4/5">
+            <FirstHeading style="mb-2">experience. 💼</FirstHeading>
+            <ThirdHeading style="mb-5">
+              Software Engineer @ Stealth Startup
+            </ThirdHeading>
+            <FourthHeading>
+              &gt; Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+              do eiusmod tempor incididunt ut labore et dolore magna aliqua
+            </FourthHeading>
+            <FourthHeading>
+              &gt; Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+              do eiusmod tempor incididunt ut labore et dolore magna aliqua
+            </FourthHeading>
+            <FourthHeading>
+              &gt; Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+              do eiusmod tempor incididunt ut labore et dolore magna aliqua
+            </FourthHeading>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
