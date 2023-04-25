@@ -190,10 +190,10 @@ export default function Home() {
           >
             👋
           </motion.p>
-          <FirstHeading>Hello World, I am Marcus Tan</FirstHeading>
+          <FirstHeading>Hello World, I am Benn Tan</FirstHeading>
           <SecondHeading>
-            I am an incoming XXX XX Freshman and was offered the XXX Merit
-            Scholarship.
+            I am an incoming Business freshman and am keen to know more about
+            the finance field
           </SecondHeading>
         </div>
       </section>
