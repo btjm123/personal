@@ -33,7 +33,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## Deployment on Vercel
 
-Visit it [here](https://personal-portfolio-two-nu.vercel.app)
+Visit it [here](https://findbenn.com)
 
 ## Feedback
 
