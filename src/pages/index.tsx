@@ -219,8 +219,8 @@ export default function Home() {
               </ThirdHeading>
               <ThirdHeading>
                 Given my prior experience in coding, I believe that my critical
-                and logical thinking skills honed will also help me in the
-                pursit in the IB track.
+                and logical thinking skills honed will also help me in my pursit
+                in the IB track.
               </ThirdHeading>
             </motion.div>
           </div>
