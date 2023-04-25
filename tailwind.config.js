@@ -17,6 +17,7 @@ module.exports = {
         serif: ['ui-serif', 'Georgia'],
         mono: ['ui-monospace', 'SFMono-Regular'],
       },
+      screens: { sm: { max: '640px' } },
     },
   },
   plugins: [],
