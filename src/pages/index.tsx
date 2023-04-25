@@ -71,16 +71,27 @@ export default function Home() {
   ]);
 
   return (
-    <main>
+    <main className="bg-slate-100">
       {/* Navbar */}
+      <nav className="fixed top-10 w-full z-50">
+        <ul className="flex justify-end">
+          <li className="mr-10 text-xl cursor-pointer text-slate-600 font-medium">
+            intro
+          </li>
+          <li className="mr-10 text-xl cursor-pointer text-slate-600 font-medium">
+            about me
+          </li>
+          <li className="mr-10 text-xl cursor-pointer text-slate-600 font-medium">
+            experience
+          </li>
+          <li className="mr-10 text-xl cursor-pointer text-slate-600 font-medium">
+            awards
+          </li>
+        </ul>
+      </nav>
       {/* Intro Section */}
-      <section className="min-h-screen bg-green-200 flex items-center">
+      <section className="min-h-screen flex items-center">
         <div className="w-1/2 pl-40">
-          {/* <Image
-            width={100}
-            height={100}
-            src={`https://arc.nus.edu.sg/wordpress/wp-content/uploads/2019/10/1200px-NUS_coat_of_arms.svg_-1.png`}
-          /> */}
           <motion.p
             className="text-6xl"
             variants={shakeVariant}
@@ -98,7 +109,7 @@ export default function Home() {
       </section>
 
       {/*  About Me Section */}
-      <section className="min-h-screen bg-blue-100 flex justify-center">
+      <section className="min-h-screen  flex justify-center">
         <div className="w-4/5 mt-40">
           <div className="w-3/5">
             <FirstHeading>about me. 🤪</FirstHeading>
@@ -124,7 +135,7 @@ export default function Home() {
       </section>
 
       {/* Experience Section */}
-      <section className="min-h-screen bg-orange-100 flex justify-center">
+      <section className="min-h-screen flex justify-center">
         <div className="w-4/5 mt-40">
           <div className="w-4/5">
             <FirstHeading style="mb-2">experience. 💼</FirstHeading>
@@ -197,7 +208,7 @@ export default function Home() {
       </section>
 
       {/* Awards Section */}
-      <section className="min-h-screen bg-purple-100 flex justify-center">
+      <section className="min-h-screen flex justify-center">
         <div className="w-4/5 mt-20">
           <div className="w-3/5">
             <FirstHeading>awards. 🎖️</FirstHeading>
