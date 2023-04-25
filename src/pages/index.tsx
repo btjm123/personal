@@ -20,7 +20,7 @@ import {
   TypescriptIcon,
   VSCodeIcon,
 } from '@/components';
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import {
   boxVariant,
   boxDelayVariant,
@@ -49,6 +49,12 @@ export default function Home() {
   const awardAnimation = useAnimation();
   const [awardRef, isAwardShown] = useInView();
 
+  // Refs to control to scroll to animation
+  const introSectionRef = useRef<HTMLElement>(null);
+  const aboutSectionRef = useRef<HTMLElement>(null);
+  const expSectionRef = useRef<HTMLElement>(null);
+  const awardsSectionRef = useRef<HTMLElement>(null);
+
   // useEffects hooks to control animation
   useEffect(() => {
     helloAnimation.start('start');
@@ -75,22 +81,54 @@ export default function Home() {
       {/* Navbar */}
       <nav className="fixed top-10 w-full z-50">
         <ul className="flex justify-end">
-          <li className="mr-10 text-xl cursor-pointer text-slate-600 font-medium">
+          <li
+            className="mr-10 text-xl cursor-pointer text-slate-600 font-medium relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] 
+            before:-bottom-2 before:left-0 before:bg-black
+            before:hover:scale-x-100 before:scale-x-0 before:origin-top-left
+            before:transition before:ease-in-out before:duration-300"
+            onClick={() => {
+              introSectionRef.current?.scrollIntoView({ behavior: 'smooth' });
+            }}
+          >
             intro
           </li>
-          <li className="mr-10 text-xl cursor-pointer text-slate-600 font-medium">
+          <li
+            className="mr-10 text-xl cursor-pointer text-slate-600 font-medium relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] 
+            before:-bottom-2 before:left-0 before:bg-black
+            before:hover:scale-x-100 before:scale-x-0 before:origin-top-left
+            before:transition before:ease-in-out before:duration-300"
+            onClick={() => {
+              aboutSectionRef.current?.scrollIntoView({ behavior: 'smooth' });
+            }}
+          >
             about me
           </li>
-          <li className="mr-10 text-xl cursor-pointer text-slate-600 font-medium">
+          <li
+            className="mr-10 text-xl cursor-pointer text-slate-600 font-medium relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] 
+            before:-bottom-2 before:left-0 before:bg-black
+            before:hover:scale-x-100 before:scale-x-0 before:origin-top-left
+            before:transition before:ease-in-out before:duration-300"
+            onClick={() => {
+              expSectionRef.current?.scrollIntoView({ behavior: 'smooth' });
+            }}
+          >
             experience
           </li>
-          <li className="mr-10 text-xl cursor-pointer text-slate-600 font-medium">
+          <li
+            className="mr-10 text-xl cursor-pointer text-slate-600 font-medium relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] 
+            before:-bottom-2 before:left-0 before:bg-black
+            before:hover:scale-x-100 before:scale-x-0 before:origin-top-left
+            before:transition before:ease-in-out before:duration-300"
+            onClick={() => {
+              awardsSectionRef.current?.scrollIntoView({ behavior: 'smooth' });
+            }}
+          >
             awards
           </li>
         </ul>
       </nav>
       {/* Intro Section */}
-      <section className="min-h-screen flex items-center">
+      <section className="min-h-screen flex items-center" ref={introSectionRef}>
         <div className="w-1/2 pl-40">
           <motion.p
             className="text-6xl"
@@ -109,7 +147,10 @@ export default function Home() {
       </section>
 
       {/*  About Me Section */}
-      <section className="min-h-screen  flex justify-center">
+      <section
+        className="min-h-screen  flex justify-center"
+        ref={aboutSectionRef}
+      >
         <div className="w-4/5 mt-40">
           <div className="w-3/5">
             <FirstHeading>about me. 🤪</FirstHeading>
@@ -135,7 +176,7 @@ export default function Home() {
       </section>
 
       {/* Experience Section */}
-      <section className="min-h-screen flex justify-center">
+      <section className="min-h-screen flex justify-center" ref={expSectionRef}>
         <div className="w-4/5 mt-40">
           <div className="w-4/5">
             <FirstHeading style="mb-2">experience. 💼</FirstHeading>
@@ -208,7 +249,10 @@ export default function Home() {
       </section>
 
       {/* Awards Section */}
-      <section className="min-h-screen flex justify-center">
+      <section
+        className="min-h-screen flex justify-center"
+        ref={awardsSectionRef}
+      >
         <div className="w-4/5 mt-20">
           <div className="w-3/5">
             <FirstHeading>awards. 🎖️</FirstHeading>
