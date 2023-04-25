@@ -230,7 +230,7 @@ export default function Home() {
       {/* Experience Section */}
       <section className="min-h-screen flex justify-center" ref={expSectionRef}>
         <div className="w-4/5 mt-40">
-          <div className="w-4/5">
+          <div className="sm:w-full md:w-full lg:w-4/5">
             <FirstHeading style="mb-2">experience. 💼</FirstHeading>
             {/* TODO: abstract this away in a Experience Container */}
             <motion.div
@@ -305,8 +305,8 @@ export default function Home() {
         className="min-h-screen flex justify-center"
         ref={awardsSectionRef}
       >
-        <div className="w-4/5 mt-20">
-          <div className="w-3/5">
+        <div className="sm:w-full md:w-full lg:w-4/5 mt-20">
+          <div className="sm:w-full md:w-full sm:px-20 md:px-20 lg:w-3/5">
             <FirstHeading>awards. 🎖️</FirstHeading>
             <motion.ul
               ref={awardRef}
