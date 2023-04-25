@@ -11,6 +11,7 @@ Even though I didn't need the backend or file-based routing features that NextJS
 
 - [x] Responsive Navbar
 - [x] Responsive text and respective section 
+- [x] Get a custom domain (not very far fetched)
 - [ ] Add Projects Section (maybe a card with box-shadow properties?)
 - [ ] Add hyperlinks to GitHub, LinkedIn, Youtube Channel
 - [ ] Add Dark Mode
@@ -19,7 +20,6 @@ Even though I didn't need the backend or file-based routing features that NextJS
 - [ ] Add a contact form (really?)
 - [ ] Add a referrals section (probably not tho)
 - [ ] Add a fake loading screen (far fetched in the future, possible with useTimeout ig and NextJS file-based routing will come in handy here)
-- [ ] Get a custom domain (not very far fetched)
 
 ## Getting Started
 
