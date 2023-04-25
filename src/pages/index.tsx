@@ -9,6 +9,7 @@ import {
   GitIcon,
   GithubIcon,
   HTMLIcon,
+  HamburgerIcon,
   JavascriptIcon,
   MongoDBIcon,
   NodeJSIcon,
@@ -20,7 +21,7 @@ import {
   TypescriptIcon,
   VSCodeIcon,
 } from '@/components';
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import {
   boxVariant,
   boxDelayVariant,
@@ -48,6 +49,9 @@ export default function Home() {
   // Awards Animation
   const awardAnimation = useAnimation();
   const [awardRef, isAwardShown] = useInView();
+
+  // Control state of navigation hamburger icon on mobile devices
+  const [isOpen, setOpen] = useState(false);
 
   // Refs to control to scroll to animation
   const introSectionRef = useRef<HTMLElement>(null);
@@ -79,13 +83,61 @@ export default function Home() {
   return (
     <main className="bg-slate-100">
       {/* Navbar */}
+      <nav className="sm:flex md:flex flex-col lg:hidden  ">
+        <div className="flex justify-end pr-10 py-5">
+          <HamburgerIcon
+            onClick={() => {
+              setOpen((prevState) => !prevState);
+            }}
+          />
+        </div>
+
+        {isOpen && (
+          <ul className="flex w-full flex-col justify-center">
+            <li
+              className="w-full text-center text-slate-800 py-3 text-2xl border border-gray-300 cursor-pointer"
+              onClick={() => {
+                introSectionRef.current?.scrollIntoView({ behavior: 'smooth' });
+              }}
+            >
+              intro
+            </li>
+            <li
+              className="w-full text-center text-slate-800 py-3 text-2xl border border-gray-300 cursor-pointer"
+              onClick={() => {
+                aboutSectionRef.current?.scrollIntoView({ behavior: 'smooth' });
+              }}
+            >
+              about me
+            </li>
+            <li
+              className="w-full text-center text-slate-800 py-3 text-2xl border border-gray-300 cursor-pointer"
+              onClick={() => {
+                expSectionRef.current?.scrollIntoView({ behavior: 'smooth' });
+              }}
+            >
+              experience
+            </li>
+            <li
+              className="w-full text-center text-slate-800 py-3 text-2xl border border-gray-300 cursor-pointer"
+              onClick={() => {
+                awardsSectionRef.current?.scrollIntoView({
+                  behavior: 'smooth',
+                });
+              }}
+            >
+              awards
+            </li>
+          </ul>
+        )}
+      </nav>
       <nav className="fixed top-10 w-full z-50">
-        <ul className="flex justify-end">
+        <ul className="lg:flex justify-end sm:hidden md:hidden">
           <li
             className="mr-10 text-xl cursor-pointer text-slate-600 font-medium relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] 
-            before:-bottom-2 before:left-0 before:bg-black
-            before:hover:scale-x-100 before:scale-x-0 before:origin-top-left
-            before:transition before:ease-in-out before:duration-300"
+    before:-bottom-2 before:left-0 before:bg-black
+    before:hover:scale-x-100 before:scale-x-0 before:origin-top-left
+    before:transition before:ease-in-out before:duration-300"
             onClick={() => {
               introSectionRef.current?.scrollIntoView({ behavior: 'smooth' });
             }}
@@ -94,9 +146,9 @@ export default function Home() {
           </li>
           <li
             className="mr-10 text-xl cursor-pointer text-slate-600 font-medium relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] 
-            before:-bottom-2 before:left-0 before:bg-black
-            before:hover:scale-x-100 before:scale-x-0 before:origin-top-left
-            before:transition before:ease-in-out before:duration-300"
+    before:-bottom-2 before:left-0 before:bg-black
+    before:hover:scale-x-100 before:scale-x-0 before:origin-top-left
+    before:transition before:ease-in-out before:duration-300"
             onClick={() => {
               aboutSectionRef.current?.scrollIntoView({ behavior: 'smooth' });
             }}
@@ -105,9 +157,9 @@ export default function Home() {
           </li>
           <li
             className="mr-10 text-xl cursor-pointer text-slate-600 font-medium relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] 
-            before:-bottom-2 before:left-0 before:bg-black
-            before:hover:scale-x-100 before:scale-x-0 before:origin-top-left
-            before:transition before:ease-in-out before:duration-300"
+    before:-bottom-2 before:left-0 before:bg-black
+    before:hover:scale-x-100 before:scale-x-0 before:origin-top-left
+    before:transition before:ease-in-out before:duration-300"
             onClick={() => {
               expSectionRef.current?.scrollIntoView({ behavior: 'smooth' });
             }}
@@ -116,9 +168,9 @@ export default function Home() {
           </li>
           <li
             className="mr-10 text-xl cursor-pointer text-slate-600 font-medium relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] 
-            before:-bottom-2 before:left-0 before:bg-black
-            before:hover:scale-x-100 before:scale-x-0 before:origin-top-left
-            before:transition before:ease-in-out before:duration-300"
+    before:-bottom-2 before:left-0 before:bg-black
+    before:hover:scale-x-100 before:scale-x-0 before:origin-top-left
+    before:transition before:ease-in-out before:duration-300"
             onClick={() => {
               awardsSectionRef.current?.scrollIntoView({ behavior: 'smooth' });
             }}
@@ -138,7 +190,7 @@ export default function Home() {
           >
             👋
           </motion.p>
-          <FirstHeading>Hello World, I am Marcus Wee</FirstHeading>
+          <FirstHeading>Hello World, I am Marcus Tan</FirstHeading>
           <SecondHeading>
             I am an incoming XXX XX Freshman and was offered the XXX Merit
             Scholarship.

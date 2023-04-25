@@ -11,6 +11,7 @@ import {
   CSSIcon,
   JavascriptIcon,
   GithubIcon,
+  HamburgerIcon,
 } from './Icons';
 import {
   FirstHeading,
@@ -38,4 +39,5 @@ export {
   CSSIcon,
   JavascriptIcon,
   GithubIcon,
+  HamburgerIcon,
 };

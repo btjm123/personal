@@ -1,6 +1,7 @@
 const DEFAULT_ICON_WIDTH = 40;
 const DEFAULT_ICON_HEIGHT = 40;
 
+// is there a way to extend types here instead of declaring a new interface
 interface IconProps {
   height?: number;
   width?: number;
@@ -336,6 +337,34 @@ const GithubIcon: React.FC<IconProps> = ({
   );
 };
 
+interface HamburgerIconProps {
+  height?: number;
+  width?: number;
+  style?: string;
+  onClick: () => void;
+}
+
+const HamburgerIcon: React.FC<HamburgerIconProps> = ({
+  width = 100,
+  height = 20,
+  style = '',
+  onClick,
+}) => {
+  return (
+    <svg
+      viewBox="0 0 100 80"
+      width="40"
+      height="40"
+      className={'cursor-pointer ' + style}
+      onClick={onClick}
+    >
+      <rect width={width} height={height} rx="10"></rect>
+      <rect y={height + 10} width={width} height={height} rx="10"></rect>
+      <rect y={2 * height + 20} width={width} height={height} rx="10"></rect>
+    </svg>
+  );
+};
+
 export {
   TypescriptIcon,
   NodeJSIcon,
@@ -349,4 +378,5 @@ export {
   CSSIcon,
   JavascriptIcon,
   GithubIcon,
+  HamburgerIcon,
 };
