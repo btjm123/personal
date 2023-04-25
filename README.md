@@ -1,5 +1,5 @@
 # Introduction
-This simple webpage serves as a way for me to document my programming journey and a way to consolidate my projects, past experience and awards into one single page application. The web app was bootstrapped with **NextJS, React, TypeScript and TailWindCSS**.
+This simple webpage serves as a way for me to document my programming journey and a way to consolidate my projects, past experience and awards into one single page application. The web app was bootstrapped with **NextJS, React, TypeScript and TailWindCSS**. Animations were done with **Framer Motion** and **IntersectionObserver API**
 
 Even though I didn't need the backend or file-based routing features that NextJS offers, NextJS offers SSR (i.e Server-Side Rendering), which is pivotal in enchancing SEO (i.e Search Engine Optimisation) and increasing visibility in today's increasingly saturated digital space.
 
