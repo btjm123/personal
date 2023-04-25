@@ -1,4 +1,18 @@
 import {
+  TypescriptIcon,
+  GitIcon,
+  ReactIcon,
+  PostgresSQLIcon,
+  FigmaIcon,
+  VSCodeIcon,
+  NodeJSIcon,
+  MongoDBIcon,
+  HTMLIcon,
+  CSSIcon,
+  JavascriptIcon,
+  GithubIcon,
+} from './Icons';
+import {
   FirstHeading,
   SecondHeading,
   ThirdHeading,
@@ -6,4 +20,22 @@ import {
   SubHeading,
 } from './Text';
 
-export { FirstHeading, SecondHeading, ThirdHeading, FourthHeading, SubHeading };
+export {
+  FirstHeading,
+  SecondHeading,
+  ThirdHeading,
+  FourthHeading,
+  SubHeading,
+  TypescriptIcon,
+  GitIcon,
+  ReactIcon,
+  PostgresSQLIcon,
+  FigmaIcon,
+  VSCodeIcon,
+  NodeJSIcon,
+  MongoDBIcon,
+  HTMLIcon,
+  CSSIcon,
+  JavascriptIcon,
+  GithubIcon,
+};

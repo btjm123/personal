@@ -41,7 +41,11 @@ const ThirdHeading: React.FC<TextProps> = ({ children, style = '' }) => {
 
 const FourthHeading: React.FC<TextProps> = ({ children, style = '' }) => {
   return (
-    <h4 className={'font-bold font-sans text-2xl text-black ' + style}>
+    <h4
+      className={
+        'font-bold font-sans text-2xl text-black leading-relaxed' + style
+      }
+    >
       {children}
     </h4>
   );
