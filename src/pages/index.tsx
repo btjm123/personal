@@ -256,7 +256,7 @@ export default function Home() {
                 the process of exporting a A4-sized PDF from the quiz database
               </FourthHeading>
 
-              <div className="flex w-2/5 justify-between mt-8">
+              <div className="flex sm:w-full md:w-full lg:w-2/5 justify-between mt-8">
                 <TypescriptIcon />
                 <ReactIcon />
                 <NodeJSIcon />
@@ -287,7 +287,7 @@ export default function Home() {
                 admin CMS as a front-end for the backend algorithm
               </FourthHeading>
 
-              <div className="flex w-1/3 justify-between mt-8">
+              <div className="flex sm:w-full md:w-full lg:w-2/5 justify-between mt-8">
                 <HTMLIcon />
                 <CSSIcon />
                 <JavascriptIcon />
