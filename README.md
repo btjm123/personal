@@ -1,10 +1,6 @@
 # Introduction
 This simple webpage serves as a way for me to document my programming journey and a way to consolidate my projects, past experience and awards into one single page application. The web app was bootstrapped with **NextJS, React, TypeScript and TailWindCSS**.
 
-![image](https://user-images.githubusercontent.com/19306879/234341821-9ce89685-8dde-45d2-acb6-dd4357011975.png)
-![image](https://user-images.githubusercontent.com/19306879/234341967-eae5a456-ee73-4458-aa0c-19ea49d69bee.png)
-![image](https://user-images.githubusercontent.com/19306879/234342073-38b9f04b-66b4-4092-9528-75ec6519d9e0.png)
-
 Even though I didn't need the backend or file-based routing features that NextJS offers, NextJS offers SSR (i.e Server-Side Rendering), which is pivotal in enchancing SEO (i.e Search Engine Optimisation) and increasing visibility in today's increasingly saturated digital space.
 
 # A Quick Preview of Draft 1
