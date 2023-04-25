@@ -25,6 +25,9 @@ import { useEffect } from 'react';
 const inter = Inter({ subsets: ['latin'] });
 
 export default function Home() {
+  // Hello Animation
+  const helloAnimation = useAnimation();
+
   // About Me Animation
   const aboutMeAnimation = useAnimation();
   const [aboutMeRef, isAboutMeShown] = useInView();
@@ -55,6 +58,22 @@ export default function Home() {
     hidden: { opacity: 0, scale: 0.7 },
   };
 
+  const shakeVariant = {
+    start: (i: number) => ({
+      x: i % 2 === 0 ? [-0.5, 1.8, 0] : [0.5, -1.8, 0],
+      y: i % 2 === 0 ? [-0.5, 1.8, 0] : [0.5, -1.8, 0],
+      transition: {
+        delay: 0.2,
+        repeat: Infinity,
+        duration: 0.8,
+      },
+    }),
+  };
+
+  useEffect(() => {
+    helloAnimation.start('start');
+  }, [helloAnimation]);
+
   useEffect(() => {
     aboutMeAnimation.start(isAboutMeShown ? 'visible' : 'hidden');
     firstExpAnimation.start(isFirstExpShown ? 'visible' : 'hidden');
@@ -77,6 +96,19 @@ export default function Home() {
       {/* Intro Section */}
       <section className="min-h-screen bg-green-200 flex items-center">
         <div className="w-1/2 pl-40">
+          {/* <Image
+            width={100}
+            height={100}
+            src={`https://arc.nus.edu.sg/wordpress/wp-content/uploads/2019/10/1200px-NUS_coat_of_arms.svg_-1.png`}
+          /> */}
+          <motion.p
+            className="text-6xl"
+            variants={shakeVariant}
+            initial="start"
+            animate={helloAnimation}
+          >
+            👋
+          </motion.p>
           <FirstHeading>Hello World, I am Marcus Wee</FirstHeading>
           <SecondHeading>
             I am an incoming XXX XX Freshman and was offered the XXX Merit
