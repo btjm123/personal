@@ -212,7 +212,7 @@ export default function Home() {
             <FirstHeading>Hello World, I am Benn Tan</FirstHeading>
             <SecondHeading>
               I am an incoming Business freshman and am keen to know more about
-              the finance field
+              the entrepreneurship field
             </SecondHeading>
           </div>
         </section>
@@ -232,14 +232,14 @@ export default function Home() {
                 variants={boxVariant}
               >
                 <ThirdHeading>
-                  I have a growing interest in Investment Banking as it will
-                  help me establish a strong foundation for financial modelling
-                  and valuation skills.
+                  I have a growing interest in Entrepreneurship as I enjoy
+                  creating tangible and scalable products to solve novel
+                  consumer problems.
                 </ThirdHeading>
                 <ThirdHeading>
                   Given my prior experience in coding, I believe that my
                   critical and logical thinking skills honed will also help me
-                  in my pursit in the IB track.
+                  in my pursuit of creation of <strong>SaaS</strong> solutions
                 </ThirdHeading>
               </motion.div>
             </div>
