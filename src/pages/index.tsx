@@ -211,8 +211,8 @@ export default function Home() {
             </motion.p>
             <FirstHeading>Hello World, I am Benn Tan</FirstHeading>
             <SecondHeading>
-              I am an incoming Business freshman and am keen to know more about
-              the entrepreneurship field
+              I am an incoming Computer Science freshman and am keen to know
+              more developing for public good and technological entrepreneurship
             </SecondHeading>
           </div>
         </section>
